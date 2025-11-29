@@ -24,7 +24,7 @@
 }
 
 .section__label{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     font-size: 17px;
     color: #6415ff;
     font-weight: bold;
@@ -338,12 +338,13 @@ li{
 
 .steps__container{
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .steps__column{
     margin-left: 70px;
+    width: 45%;
 }
 
 #steps .section__title{
@@ -369,7 +370,7 @@ li{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    width: 300px;
+    width: 280px;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -389,6 +390,10 @@ li{
 
 #values .section__title{
     margin-bottom: 32px;
+}
+
+#values .section__image--container{
+    width: 47%;
 }
 
 .value__list--container{
@@ -419,6 +424,7 @@ li{
 .value__desc{
     font-size: 17px;
     color: grey;
+    line-height: 1.5;
 }
 
 .value__title{
@@ -767,6 +773,10 @@ i{
 
 @media (max-width: 1024px){
 
+    .section__description{
+        font-size: 17px;
+    }
+
     .section__image{
         width: 100%;
     }
@@ -865,7 +875,7 @@ i{
 
     
     .feature__list--container{
-        width: 90%;
+        width: 80%;
         padding-left: 20px;
     }
     
@@ -875,7 +885,7 @@ i{
     
     .features__description{
         width: 50%;
-        margin-bottom: 55px;
+        margin-bottom: 8px;
     }
 
     .feature__desc--container{
@@ -899,14 +909,12 @@ i{
 
     /* STEPS */
 
-    
     .steps__column{
         margin-left: 0px;
-        width: 65%;
+        
     }
     
     #steps .section__image--container{
-        align-items: center;
         margin-left: 0;
         margin-right: 50px;
     }
@@ -931,7 +939,12 @@ i{
 
     .values__description{
         padding: 6%;
-        width: 100%;
+        width: 80%;
+    }
+
+    #values .section__image--container{
+        margin: 0;
+        width: 45%;
     }
 
     /* PRICING */
@@ -1122,6 +1135,7 @@ i{
     #steps .section__image--container{
         margin-right: 0px;
         margin-bottom: 50px;
+        width: 70%;
     } 
     
     .steps__column{
@@ -1182,6 +1196,12 @@ i{
     
     .second__value{
         margin-left: 0;
+    }
+
+    #values .section__image--container{
+        margin: 0;
+        width: 60%;
+        margin-bottom: 30px;
     }
     
     /* PRICING */
