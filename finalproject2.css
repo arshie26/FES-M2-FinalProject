@@ -635,6 +635,14 @@ li{
     margin-left: 5%;
 }
 
+.testimonial__container{
+    margin-top: 40px;
+}
+
+.fa-star{
+    color: rgb(246 173 85);
+}
+
 .testimonials__title--container,
 .testimonial__title,
 .testimonial__desc{
@@ -674,6 +682,10 @@ li{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.testimonial__position{
+    color: grey;
 }
 
 .carousel{
@@ -861,6 +873,10 @@ i{
         font-size: 17px;
     }
 
+    .section__title{
+        font-size: 36px;
+    }
+
     .section__image{
         width: 100%;
     }
@@ -1033,6 +1049,10 @@ i{
 
     /* PRICING */
     
+    #pricing .section__title{
+        font-size: 48px;
+    }
+
     .pricing__container{
         display: flex;
         flex-direction: column;
