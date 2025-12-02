@@ -458,10 +458,6 @@ li{
 
 /* PRICING */
 
-.pricing__divider{
-    width: 100%;
-}
-
 .subtitle{
     text-align: center;
     width: 50%;
@@ -477,14 +473,16 @@ li{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
 }
 
 .price{
-    width:29%;
+    width:25%;
     border: 1px solid grey;
     margin: 0 20px;
     border-radius: 10px;
-    position: relative;    
+    position: relative;
+    overflow: hidden;    
 }
 
 .price__stripe {
@@ -497,10 +495,14 @@ li{
     border-top-right-radius: 0.5rem;
 }
 
-.price:nth-child(1) .price__stripe, 
-.price:nth-child(1) .price__button {
+.price:nth-child(1) .price__stripe {
     color: #f7fafc;
     background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
+}
+
+.price:nth-child(3) .price__stripe {
+    color: #f7fafc;
+    background: linear-gradient( 115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
 }
 
 .price__desc--container{
@@ -509,13 +511,36 @@ li{
     align-items: center;
 }
 
-.price__desc--container h3, 
-.price__desc--container p{
+.feature__list:nth-child(1){
+    font-size: 30px;
+}
+ 
+.feature__list{
     margin: 12px 0;
+    color: grey;
+    font-size: 17px;
 }
 
-.pricing__divider{
-    margin: 20px 0;
+.audience{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.pricing__divider--top{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: grey;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.pricing__divider--bottom{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: grey;
+    opacity: 0.2;
+    width: 100%;
 }
 
 .pricing__btn{
@@ -548,6 +573,39 @@ li{
 .enterprise__btn{
     background-color: red;
     color: white;
+    background: linear-gradient( 115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
+}
+
+.price__title{
+    margin-top: 45px;
+}
+
+.price__display, 
+.cadence{
+    margin-top: 15px;
+}
+
+.price__display{
+    font-size: 48px;
+}
+
+.cadence{
+    color: grey;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.business, 
+.business .cadence, 
+.business .feature__list {
+    background-color: blue;
+    color: white;
+}
+
+.business .pricing__divider--top,
+.business .pricing__divider--bottom{
+    color: lightblue;
+    opacity: 1;
 }
 
 /* TESTIMONIALS */
@@ -969,10 +1027,6 @@ i{
     }
 
     /* PRICING */
-
-    .pricing__divider{
-        width: 100%;
-    }
     
     .pricing__container{
         display: flex;
@@ -984,11 +1038,12 @@ i{
         flex-direction: column;
         align-items: center;
         width: 90%;
+        margin-top: 0px;
     }
     
     .price{
         width: 400px;
-        border: 1px solid grey;
+        border: 1px solid rgb(0,0,0,0.2);
         margin: 35px 0;
         border-radius: 10px;    
     }
@@ -999,12 +1054,9 @@ i{
         align-items: center;
     }
     
-    .price__desc--container h3, 
-    .price__desc--container p{
-        margin: 12px 0;
-    }
     
     .pricing__divider{
+        width: 100%;
         margin: 20px 0;
     }
 
