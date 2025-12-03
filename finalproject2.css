@@ -1256,6 +1256,7 @@ i{
     #steps .section__image--container{
         margin-right: 0px;
         margin-bottom: 50px;
+        margin-left: 0;
         width: 70%;
     } 
     
