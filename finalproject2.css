@@ -47,6 +47,12 @@
     margin-top: 200px;
 }
 
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .purple{
     color: #6415ff;
 }
@@ -184,7 +190,7 @@ li{
     justify-content: center;
     margin: 0 auto;
     margin-top: 100px;
-    width: 83%;
+    width: 100%;
     max-width: 1400px;
 }
 
@@ -283,7 +289,7 @@ li{
 .feature__list--container{
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 100%;
 }
 
 .feature{
@@ -351,7 +357,7 @@ li{
 
 .steps__container{
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -489,7 +495,7 @@ li{
 }
 
 .price{
-    width:25%;
+    width: calc(100%/3);
     border: 1px solid grey;
     margin: 0 20px;
     border-radius: 10px;
@@ -915,7 +921,7 @@ i{
     }
 
     .nav__links{
-        opacity: 0;
+        display: none;
     }
     
     .open__icon{
@@ -1035,8 +1041,7 @@ i{
     }
     
     #steps .section__image--container{
-        margin-left: 0;
-        margin-right: 50px;
+        margin-left: 20px;
     }
     
     .step{
