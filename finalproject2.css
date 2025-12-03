@@ -184,6 +184,10 @@ li{
 
 /* HERO BANNER */
 
+#hero-banner{
+    padding: 0 20px;
+}
+
 .hero__container{
     display: flex;
     align-items: center;
@@ -1416,6 +1420,26 @@ i{
 
 @media (max-width: 640px){
 
+    .hero__description{
+        width: 90%;
+    }
+    
+    .email__form--container{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .email__form{
+        position: relative;
+        padding: 20px 20px;
+        width: 85%;
+    }
+
+    .email__button{
+        padding: 20px 170px;
+    }
+    
+    
     .feature{
         display: flex;
         justify-content: center;
@@ -1447,6 +1471,10 @@ i{
         margin-bottom: 0;
     }
 
+
+
+
+
     .testimonial__thumbnail--container{
         width: 65px;
     }
@@ -1460,13 +1488,19 @@ i{
         margin-bottom: 40px; 
     }
 
+
+
+
     .link__column{
         margin-right: 0;
+        text-align: center;
+        margin-left: 30px;
     }
 
     .link__columns{
         padding-left: 30px;
         padding-right: 30px;
+        justify-content: center;
     }
 
 }
